@@ -1,3 +1,5 @@
+![alt tag](http://truetug.info/django-admin-helper.gif)
+
 To install add 'admin_helper' to installed apps
 
     INSTALLED_APPS += (
