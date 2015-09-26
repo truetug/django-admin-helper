@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-25 00:31+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: middleware.py:29
+msgid "You work under someone else's account. Be extremely careful!"
+msgstr ""
+
+#: middleware.py:33
+msgid "Return to your account"
+msgstr ""
+
+#: templates/admin/base_site.html:4
+msgid "Django site admin"
+msgstr ""
+
+#: templates/admin/base_site.html:22
+msgid "Django administration"
+msgstr ""
+
+#: templates/admin_helper/card_detail.html:4
+msgid "Imperio!"
+msgstr ""
+
+#: templates/admin_helper/card_detail.html:5
+msgid "email"
+msgstr ""
+
+#: templates/admin_helper/popup.html:5
+msgid "We see that in fact you"
+msgstr ""
+
+#: templates/admin_helper/popup.html:5
+msgid "Welcome to Hogwarts branch"
+msgstr ""
+
+#: templates/admin_helper/popup.html:9
+msgid "Here's your magic wand, with its help you can become someone else."
+msgstr ""
+
+#: templates/admin_helper/popup.html:12
+msgid "Give the name and say «Imeprio!»"
+msgstr ""

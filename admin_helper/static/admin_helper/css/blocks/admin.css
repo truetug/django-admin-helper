@@ -1,0 +1,88 @@
+.b-admin {
+    top: 10%;
+    /*bottom: 10%;*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 600px;
+    overflow-x: auto;
+    max-height: 70%;
+
+    padding: 10px;
+    position: fixed;
+
+    background: rgba(0,0,0,0.8);
+    border: 5px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 5em rgba(255,255,255,0.5);
+
+    z-index: 100000;
+    display: none;
+    color: #FFF;
+    font-size: 100%;
+
+    transition: all 1s;
+}
+
+.b-admin_active {
+    display: block;
+}
+
+.b-admin a, .b-admin a:visited, .b-admin a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.b-admin span {
+    white-space: nowrap;
+}
+
+.b-admin__greeting {
+    margin: 0 0 10px 0;
+}
+
+.b-admin__input {
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    font-size: 200%;
+    margin: 0;
+    padding: 2px 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.b-admin__container {
+    margin: 10px 0 0 0;
+    float: left;
+    width: 100%;
+}
+
+.b-admin__items {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.b-admin__item {
+    clear: both;
+    margin: 10px 0 0 0;
+    overflow: auto;
+    list-style: none;
+}
+
+.b-admin__item p {
+    margin: 0;
+}
+
+.b-admin__item-info {
+}
+
+.b-admin__item-link, .b-admin__item-link:visited, .b-admin__item-link:hover {
+    font-size: 200%;
+}
+
+.b-admin__item-photo {
+    float: left;
+    padding: 0 10px 0 0;
+}

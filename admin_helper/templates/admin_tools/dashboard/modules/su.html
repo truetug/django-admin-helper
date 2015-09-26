@@ -1,0 +1,32 @@
+{% extends "admin_tools/dashboard/module.html" %}
+{% load i18n %}
+
+
+{% block module_content %}
+<ul style="text-align: center;">
+    <li><p>Сейчас вы <strong>{{ user.get_full_name }} ({{ user.username }})</strong></p></li>
+    {% if module.original_user %}<li><p>До этого мы знали вас как <strong>{{ module.original_user.get_full_name_inflect__rd__rev }} ({{ module.original_user.username }})</strong></p></li>{% endif %}
+</ul>
+
+<ul class="inline">
+    <li>
+        <form method="get" action=".">
+        <select name="su" class="chosen-select" data-placeholder="Выберите человека">
+            <option value=""></option>
+            {% for u in module.users %}
+                <option value="{{ u.username }}">
+                {{ u.get_full_name }} ({{ u.username }})
+                {% if u.is_staff %}
+                &#9819;
+                {% endif %}
+                {% if u.is_superuser %}
+                &#9818;
+                {% endif %}
+                </option>
+            {% endfor %}
+        </select>
+        <button>Империо!</button>
+        </form>
+    </li>
+</ul>
+{% endblock %}

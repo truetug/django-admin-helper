@@ -1,0 +1,7 @@
+{% for object in object_list %}
+{% if forloop.first %}<ul class="b-admin__items">{% endif %}
+    <li class="b-admin__item">
+        {% include "admin_helper/card_detail.html" %}
+    </li>
+{% if forloop.last %}</ul>{% endif %}
+{% endfor %}

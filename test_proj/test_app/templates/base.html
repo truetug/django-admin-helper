@@ -1,0 +1,37 @@
+{% load static admin_helper %}
+<!DOCTYPE html>
+<head>
+    <title>django-admin-helper demo site</title>
+    <link href="{% static "base.css" %}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    {% admin_helper %}
+</head>
+<body>
+    <div class="content">
+        <h1><a href="/">Superprogramm.com</a></h1>
+
+        {% for message in messages %}
+        {% if forloop.first %}<p>Messages:</p><ul>{% endif %}
+        <li>{{ message }}</li>
+        {% if forloop.last %}</ul>{% endif %}
+        {% endfor %}
+        
+        <p class="instructions">{% if user.is_authenticated %}Great. You are logged in as <strong>{{ user.username }}</strong>. Press «ctrl + ~» and type «doe» for example to start using <a href="http://github.com/truetug/django-admin-helper">django-admin-helper</a>.{% else %}Hi. You are not logged in. Fix it by logging in with credentials username «admin» and password «admin».{% endif %}</p>
+
+        {% if form %}
+        {{ form.media }}
+        <form method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" name="" value="{% if user.is_authenticated %}Logout{% else %}Sign in{% endif %}" />
+        </form>
+        {% endif %}
+
+        {% lorem 3 p %}
+    </div>
+    <div class="footer">
+        &copy; <a href="http://truetug.info">tug</a>, {% now "Y" %}
+    </div>
+</body>
+</html>

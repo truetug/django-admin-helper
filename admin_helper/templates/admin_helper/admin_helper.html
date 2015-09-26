@@ -1,0 +1,11 @@
+{% load static %}
+
+{% if is_sudoer %}
+<meta name="admin-suggest-url" content="{{ suggest_url }}">
+<meta name="admin-init-url" content="{{ init_url }}">
+<meta name="admin-current-username" content="{{ current_username }}">
+<meta name="admin-current-fullname" content="{{ current_fullname }}">
+<meta name="admin-original-username" content="{{ original_username }}">
+<link href="{% static "admin_helper/css/blocks/admin.css" %}" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{% static "admin_helper/js/admin.js" %}"></script>
+{% endif %}

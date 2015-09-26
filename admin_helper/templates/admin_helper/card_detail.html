@@ -1,0 +1,6 @@
+{% load i18n %}
+
+<div class="b-admin__item-info">
+    <a class="b-admin__item-link" href="{{ path }}?su={{ object.username }}" title="{% trans "Imperio!" %}">{% firstof object.get_full_name object.username %}</a>
+    <p>{% trans "email" %}: {{ object.email }}</p>
+</div>

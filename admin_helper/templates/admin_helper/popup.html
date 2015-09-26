@@ -1,0 +1,14 @@
+{% load i18n %}
+<div class="b-admin">
+    <div class="b-admin__greeting">
+        <p>
+        {% if in_su %}{% trans "We see that in fact you" %}{% else %}{% trans "Welcome to Hogwarts branch" %},{% endif %}
+        <span><i class="fa fa-user"></i> <a href="{% if in_su %}{{ path }}?su={{ original_username }}{% endif %}">{% firstof original_username user.get_full_name user.username %}</a></span>.
+        </p>
+
+        <p>{% trans "Here's your magic wand, with its help you can become someone else." %}</p>
+    </div>
+
+    <input class="b-admin__input" type="text" placeholder="{% trans "Give the name and say «Imeprio!»" %}">
+    <div class="b-admin__container">{% include "admin_helper/card_list.html" %}</div>
+</div>

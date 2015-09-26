@@ -1,0 +1,4 @@
+# django-admin-helper requirements
+
+# required
+django>=1.7

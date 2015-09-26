@@ -1,0 +1,5 @@
+include CHANGELOG LICENSE MANIFEST.in README.rst
+recursive-include docs *
+recursive-include admin_helper/locale *
+recursive-include admin_helper/templates *
+recursive-include admin_helper/static *
